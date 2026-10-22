@@ -1,0 +1,28 @@
+{
+  "name": "financex",
+  "version": "1.0.0",
+  "description": "FinanceX is a complete personal finance management website whose main purpose is to let users manage their income, expenses, budgets, and savings goals all in one place and predict their future's expenses, budgets, and savings.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently -n \"BACKEND,FRONTEND\" -c \"cyan.bold,green.bold\" \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "python -m uvicorn app.main:app --app-dir backend --host 0.0.0.0 --port 8000 --reload",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "seed": "python backend/seed.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshcodeing1234/FinanceX.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/harshcodeing1234/FinanceX/issues"
+  },
+  "homepage": "https://github.com/harshcodeing1234/FinanceX#readme",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}

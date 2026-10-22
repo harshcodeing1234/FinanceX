@@ -1,2 +1,93 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+site-packages/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.xml
+
+# MyPy / type checkers
+.mypy_cache/
+.dmypy.json
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.vite/
+frontend/.env
+frontend/.env.*
+!frontend/.env.example
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+ML/data/*.csv
+!ML/data/*unseen*.csv
+!ML/data/*test*.csv
+
+# ML model binaries (large — re-train or download separately)
+# Comment out if you want to commit trained models
+# ML/model/*.pkl
+
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.swo
+*.bak
+*.tmp
+*.orig
+.cache/
 docs/
-data/
